@@ -3,7 +3,7 @@
 
 Name:           fedora-productimg-workstation
 Version:        23
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Installer branding and configuration for Fedora Workstation
 
 # Copyright and related rights waived via CC0
@@ -66,6 +66,9 @@ popd
 %{_datadir}/fedora-productimg/product.img
 
 %changelog
+* Thu Jan 14 2016 Arkady L. Shane <ashejn@russianfedora.pro> 23-2.R
+- rebuilt
+
 * Sun Oct 25 2015 Arkady L. Shane <ashejn@russianfedora.pro> 23-1.R
 - set rfremix env by default
 
