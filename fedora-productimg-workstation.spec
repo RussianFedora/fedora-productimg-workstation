@@ -3,7 +3,7 @@
 
 Name:           fedora-productimg-workstation
 Version:        23
-Release:        6%{?dist}
+Release:        6%{?dist}.R
 Summary:        Installer branding and configuration for Fedora Workstation
 
 # Copyright and related rights waived via CC0
