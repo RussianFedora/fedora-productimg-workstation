@@ -2,8 +2,8 @@
 %global pixmapsource %{_datadir}/anaconda/pixmaps/workstation
 
 Name:           fedora-productimg-workstation
-Version:        23
-Release:        6%{?dist}.R
+Version:        27
+Release:        1%{?dist}.R
 Summary:        Installer branding and configuration for Fedora Workstation
 
 # Copyright and related rights waived via CC0
@@ -60,12 +60,26 @@ popd
 %{_datadir}/lorax/product/%{python3_sitearch}/pyanaconda/installclasses/__pycache__/*
 %dir %{_datadir}/lorax/product/usr/share
 %dir %{_datadir}/lorax/product/usr
+%dir %{_datadir}/lorax/product
+%dir %{_datadir}/lorax
 %dir %{pixmaptarget}
 %{pixmaptarget}/*.png
 %dir %{_datadir}/fedora-productimg
 %{_datadir}/fedora-productimg/product.img
 
 %changelog
+* Mon Aug 14 2017 Stephen Gallagher <sgallagh@redhat.com> - 27-1
+- Bump release for Fedora 27
+
+* Mon Aug 14 2017 Ville Skyttä <ville.skytta@iki.fi> - 23-9
+- Own %%{_datadir}/lorax{,/product} dirs
+
+* Wed Aug 02 2017 Fedora Release Engineering <releng@fedoraproject.org> - 23-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
+
+* Wed Jul 26 2017 Fedora Release Engineering <releng@fedoraproject.org> - 23-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Thu Mar  9 2017 Arkady L. Shane <ashejn@russianfedora.pro> 23-6.R
 - bump release to rebuild
 
