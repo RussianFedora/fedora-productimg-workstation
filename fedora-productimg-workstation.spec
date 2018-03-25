@@ -3,7 +3,7 @@
 
 Name:           fedora-productimg-workstation
 Version:        27
-Release:        1%{?dist}.R
+Release:        2%{?dist}.R
 Summary:        Installer branding and configuration for Fedora Workstation
 
 # Copyright and related rights waived via CC0
@@ -68,6 +68,9 @@ popd
 %{_datadir}/fedora-productimg/product.img
 
 %changelog
+* Wed Feb 07 2018 Fedora Release Engineering <releng@fedoraproject.org> - 27-2.R
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
+
 * Mon Aug 14 2017 Stephen Gallagher <sgallagh@redhat.com> - 27-1
 - Bump release for Fedora 27
 
